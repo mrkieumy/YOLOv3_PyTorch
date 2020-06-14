@@ -15,7 +15,8 @@ This repository is forked from great work pytorch-yolov3 of @github/andy-yun
 ## How to run this repository
 1. Download or clone this repository to your computer.
 2. Install some basic requirements if needed.
-3. Open a terminal and run following commands according to functions:
+3. Download weight files and dataset from here (https://drive.google.com/drive/folders/17AICv8xTjLXkv_2PUh8h5f9qflSrjvit?usp=sharing)
+4. Open a terminal and run following commands according to functions:
 
 Noted that all of these instructions for Linux environment (for Windows, you should visit original repository to read more)
 
