@@ -490,7 +490,7 @@ def train(epoch,iterates,train_sampler,adaptation,layerwise):
 
     return iterates,train_loss_epoch / train_count
 
-
+### this function for training our task-conditioning network
 def train_conditioning(epoch,iterates,train_sampler):
     kwargs = {'num_workers': num_workers, 'pin_memory': True} if use_cuda else {}
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, sampler=train_sampler, **kwargs)

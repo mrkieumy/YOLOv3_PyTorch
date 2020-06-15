@@ -8,15 +8,15 @@ This repository is forked from great work pytorch-yolov3 of <a href="https://git
 
 ### Improvement of this repository
 * Developed a state-of-the-art result for Pedestrian detection task on KAIST and FLIR dataset.
+* Improved training procedures such as savelog, savemodel, continue train from model.
 * Added implementation of Bottom-up adaptation and Layer-wise adaptation.
 * Added cross-validation during training by setting 10% of validation set and 90% of training set.
-* Added training procedure decay learning rate by training loss and validation recall.
-* Improved update learning rate by step epoch.
+* Added training procedure to decay learning rate by training loss and validation recall.
 * Added calculation mean Average Precision (mAP) and Log Average Miss Rate (Miss rate) on daytime and nighttime of KAIST dataset. 
 * Added drawing bounding boxes on images based on detection results and ground-truth annotation.
 * Added function to convert YOLO output result to JSON format for evaluation miss rate.
-* Improved training procedure by monitor the training loss and validation performance during training. 
-* Added functions detect result on a folder or from a video.
+* Added monitor the training loss and validation performance during training. 
+* Added functions detection on a folder or from a video.
 
 ### How to run this repository
 1. Download or clone this repository to your computer.
@@ -31,7 +31,7 @@ Noted that all of these instructions for Linux environment (for Windows, you sho
 * configurationfile = cfg/yolov3_kaist.cfg 
 * datafile = data/kaist.data
 * listname = data/kaist_person.names
-For all of following commands,if command with [...] will be an option,
+For all of following commands, if command with [...] will be an option,
 you can use your parameter or leave there to use default paramaters above.
 
 
