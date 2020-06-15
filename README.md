@@ -1,21 +1,27 @@
 # Another Implementation of YOLOv3 with Pytorch
 ## Training YOLOv3 on KAIST and FLIR dataset for Pedestrian Detection task in Thermal Imagery.
-####This work is for our Best Student Paper award at ICIAP 2019 with the title: "Domain Adaptation for Privacy-Preserving Pedestrian Detection in Thermal Imagery" at
-https://www.researchgate.net/publication/335603374_Domain_Adaptation_for_Privacy-Preserving_Pedestrian_Detection_in_Thermal_Imagery
+### This work is for our Best Student Paper award at ICIAP 2019 with the title: <a href="https://www.researchgate.net/publication/335603374_Domain_Adaptation_for_Privacy-Preserving_Pedestrian_Detection_in_Thermal_Imagery"> Domain Adaptation for Privacy-Preserving Pedestrian Detection in Thermal Imagery </a>
+
  
-This repository is forked from great work pytorch-yolov3 of @github/andy-yun 
-(https://github.com/andy-yun/pytorch-0.4-yolov3). However, this repository is changed many files and function for our research.
+This repository is forked from great work pytorch-yolov3 of <a href="https://github.com/andy-yun/pytorch-0.4-yolov3">@github/andy-yun </a> 
+. However, this repository is changed many files and functions for our research.
 
-### Difference between this repository and the original version.
-* The source code is changed many files to implement bottom-up adaptation. 
-* Some files were changed such as train.py, darknet.py, detect.py, eval.py, dataset.py, utils.py.
-* Some files were added to this repository such as drawBBxs.py, seeloss.py, LAMR_AP.py, output2JSON.py 
-* Some main functions added to this repository such as training with bottom-up, layer-wise adaptation, test on folder and video, evaluation mAP and log average miss rate, monitor loss during training, draw all bounding boxes (TP, FP, FN) on images.
+### Improvement of this repository
+* Developed a state-of-the-art result for Pedestrian detection task on KAIST and FLIR dataset.
+* Added implementation of Bottom-up adatation and Layer-wise adaptation.
+* Added cross-validation during training by set 10% of validation set and 90% of training set.
+* Added training procedure decay learning rate by training loss and validation recall.
+* Improved update learning rate by step epoch.
+* Added calculation mean Average Precision (mAP) and Log Average Miss Rate (Miss rate) on daytime and nighttime of KAIST dataset. 
+* Added drawing bounding boxes on images based on detection results and ground-truth annotation.
+* Added function to convert YOLO output result to JSON format for evaluation miss rate.
+* Improved training procedure by monitor the training loss and validation performance during training. 
+* Added functions detect result on folder or from video.
 
-## How to run this repository
+### How to run this repository
 1. Download or clone this repository to your computer.
 2. Install some basic requirements if needed.
-3. Download weight files and dataset from here (https://drive.google.com/drive/folders/17AICv8xTjLXkv_2PUh8h5f9qflSrjvit?usp=sharing)
+3. Download <a href="https://drive.google.com/file/d/1Kyoyira0liRRr_FOY8DDSeATLQAwXtu-/view?usp=sharing">kaist_thermal_detector.weights</a> or <a href="https://drive.google.com/file/d/1xx4nhja95VeFsZydTycD8ArTYl1p-bnx/view?usp=sharing">flir_detector.weights </a> files and put in the directory 'weights'.
 4. Open a terminal and run following commands according to functions:
 
 Noted that all of these instructions for Linux environment (for Windows, you should visit original repository to read more)
@@ -62,7 +68,7 @@ python drawBBxs.py imagefolder
 
 ### Train your own data or KAIST data as follows:
 Before training on KAIST or FLIR or your own dataset, you should prepare some steps as follow:
-1. Dataset (download KAIST dataset as link and place on a directory)
+1. Dataset (download <a href="https://drive.google.com/file/d/14A3K2IPPPC8-BwPh-YjeHARaZqjnR655/view?usp=sharing">KAIST_dataset </a> and place on a directory any place (better at root or in current directory))
 2. Modify the link to dataset at data/train_thermal.txt and test_thermal.txt.
 3. Check some parameters in configuration files: data/kaist.data, cfg/yolov3_kaist.cfg such as train on thermal or visible, learning rate, etc,. 
 
@@ -120,7 +126,7 @@ FLIR dataset results (precision):
 
 mean Average Precision:  	73.2%
 
-### Citation
+## Citation
 We really hope this repository is useful for you. Please cite our paper as
 ```
 @inproceedings{kieu2019domain,
