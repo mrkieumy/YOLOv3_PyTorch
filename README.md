@@ -8,15 +8,15 @@ This repository is forked from great work pytorch-yolov3 of <a href="https://git
 
 ### Improvement of this repository
 * Developed a state-of-the-art result for Pedestrian detection task on KAIST and FLIR dataset.
-* Added implementation of Bottom-up adatation and Layer-wise adaptation.
-* Added cross-validation during training by set 10% of validation set and 90% of training set.
+* Added implementation of Bottom-up adaptation and Layer-wise adaptation.
+* Added cross-validation during training by setting 10% of validation set and 90% of training set.
 * Added training procedure decay learning rate by training loss and validation recall.
 * Improved update learning rate by step epoch.
 * Added calculation mean Average Precision (mAP) and Log Average Miss Rate (Miss rate) on daytime and nighttime of KAIST dataset. 
 * Added drawing bounding boxes on images based on detection results and ground-truth annotation.
 * Added function to convert YOLO output result to JSON format for evaluation miss rate.
 * Improved training procedure by monitor the training loss and validation performance during training. 
-* Added functions detect result on folder or from video.
+* Added functions detect result on a folder or from a video.
 
 ### How to run this repository
 1. Download or clone this repository to your computer.
@@ -36,7 +36,7 @@ you can use your parameter or leave there to use default paramaters above.
 
 
 ### Detection (detect bounding box):
-Detect bounding box result on image(s) or video by passing parameter: 
+Detect bounding box result on image(s) or video by parameter: 
 image file or folder with all images or video file. 
 The result will appear with the same name + 'predicted'
 ```
