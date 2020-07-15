@@ -68,7 +68,7 @@ python drawBBxs.py imagefolder
 
 ### Train your own data or KAIST data as follows:
 Before training on KAIST or FLIR or your own dataset, you should prepare some steps as follow:
-1. Dataset (download <a href="https://drive.google.com/file/d/14A3K2IPPPC8-BwPh-YjeHARaZqjnR655/view?usp=sharing">KAIST_dataset </a> and place on a directory any place (better at root or in current directory))
+1. Dataset (download <a href="https://drive.google.com/file/d/14A3K2IPPPC8-BwPh-YjeHARaZqjnR655/view?usp=sharing">KAIST_dataset </a> and place on any directory (better at root or in current directory))
 2. Modify the link to dataset at data/train_thermal.txt and test_thermal.txt.
 3. Check some parameters in configuration files: data/kaist.data, cfg/yolov3_kaist.cfg such as train on thermal or visible, learning rate, etc,. 
 
@@ -82,7 +82,7 @@ With -x and y as follow:
 * -d: datafile (y is the path of your data file), default data/kaist.data train on thermal images.
 * -c: cfgfile (y is the path of your cfg file), default cfg/yolov3_kaist.cfg with lr=0.001
 
-For example, if you want to train from yolov3 weight for a maximum of 100 epoch, you have:
+For example, if you want to train from yolov3 weight for a maximum of 100 epochs, you have:
 ```
 python train.py -w weights/yolov3.weights -e 100 
 ```
@@ -101,7 +101,6 @@ python seeloss.py
 
 
 ### Demo on webcam:
-Please check it
 
 ```
 python demo.py
@@ -126,6 +125,8 @@ FLIR dataset results (precision):
 
 mean Average Precision:  	73.2%
 
+Noted that, this result is updated recently in our new paper (will be available soon), different with our ICIAP 2019 paper.
+
 ## Citation
 We really hope this repository is useful for you. Please cite our paper as
 ```
@@ -138,7 +139,7 @@ We really hope this repository is useful for you. Please cite our paper as
 
 ```
 
-If you have any comment or question about this repository, please leave it in Issues.
+If you have any comment or question to contribute, please leave it in Issues.
 
 Other question, please contact me by email: my.kieu@unifi.it.
 
