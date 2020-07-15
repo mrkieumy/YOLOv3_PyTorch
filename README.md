@@ -1,6 +1,8 @@
 # Another Implementation of YOLOv3 with Pytorch
 ## Training YOLOv3 on KAIST and FLIR dataset for Pedestrian Detection task in Thermal Imagery.
-### This work is for our Best Student Paper Honorable Mention Award at ICIAP 2019 with the title: <a href="https://www.researchgate.net/publication/335603374_Domain_Adaptation_for_Privacy-Preserving_Pedestrian_Detection_in_Thermal_Imagery"> Domain Adaptation for Privacy-Preserving Pedestrian Detection in Thermal Imagery </a>
+### This work is for our Best Student Paper Honorable Mention Award at ICIAP 2019 with the title: 
+
+<a href="https://www.researchgate.net/publication/335603374_Domain_Adaptation_for_Privacy-Preserving_Pedestrian_Detection_in_Thermal_Imagery"> Domain Adaptation for Privacy-Preserving Pedestrian Detection in Thermal Imagery </a>
 
  
 This repository is forked from great work pytorch-yolov3 of <a href="https://github.com/andy-yun/pytorch-0.4-yolov3">@github/andy-yun </a> 
