@@ -138,7 +138,16 @@ We really hope this repository is useful for you. Please cite our paper as
 	Title = {Domain Adaptation for Privacy-Preserving Pedestrian Detection in Thermal Imagery},
 	Year = {2019}
 	}
+```
 
+If you use our Layer-wise method, please cite our paper as
+```
+@inproceedings{kieu2020layerwise,
+	Author = {Kieu, My and Bagdanov, Andrew D and Bertini, Marco},
+	Booktitle = {ACM Transactions on Multimedia Computing Communications and Applications (ACM TOMM)},
+	Title = {Bottom-up and Layer-wise Domain Adaptation for Pedestrian Detection in Thermal Images},
+	Year = {2020}
+	}
 ```
 
 If you have any comment or question to contribute, please leave it in Issues.
