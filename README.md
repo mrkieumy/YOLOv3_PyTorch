@@ -4,6 +4,10 @@
 
 <a href="https://www.researchgate.net/publication/335603374_Domain_Adaptation_for_Privacy-Preserving_Pedestrian_Detection_in_Thermal_Imagery"> Domain Adaptation for Privacy-Preserving Pedestrian Detection in Thermal Imagery </a>
 
+### And our ACM TOMM journal 2020 with the title: 
+
+<a href="https://www.researchgate.net/publication/343262725_Bottom-up_and_Layer-wise_Domain_Adaptation_for_Pedestrian_Detection_in_Thermal_Images"> Bottom-up and Layer-wise Domain Adaptation for Pedestrian Detection in Thermal Images </a>
+
  
 This repository is forked from great work pytorch-yolov3 of <a href="https://github.com/andy-yun/pytorch-0.4-yolov3">@github/andy-yun </a> 
 . However, this repository is changed many files and functions for our research.
